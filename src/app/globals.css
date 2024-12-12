@@ -1,6 +1,7 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --border-color: #ececed;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -22,6 +23,11 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  display: flex;
+}
+
+main {
+  flex: 1 1 0%;
 }
 
 * {
@@ -39,4 +45,9 @@ a {
   html {
     color-scheme: dark;
   }
+}
+
+.p {
+  font-size: 15px;
+  font-weight: 400;
 }
