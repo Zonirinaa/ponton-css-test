@@ -10,7 +10,7 @@ export const gilroy = localfont({
     {
       path : "../materials/Gilroy-SemiBold.ttf",
       style : "normal",
-      weight : "500"
+      weight : "600"
     },
     {
       path : "../materials/Gilroy-Medium.ttf",
