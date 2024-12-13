@@ -45,7 +45,7 @@ const PersonalInfoForm = () => {
         <div style={{ flex: "1 1 0%" }} />
       </div>
       <p>
-        Use this email to log in to your <span>resumedone.io</span> account and
+        Use this email to log in to your <a>resumedone.io</a> account and
         receive notifications.
       </p>
       <button className={styles.button}>Save</button>

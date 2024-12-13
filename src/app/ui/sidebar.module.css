@@ -15,6 +15,7 @@
   padding: 12px 8px;
   width: 100%;
   border-bottom: 1px solid var(--border-color);
+  line-height: 22px;
 }
 
 .menu {

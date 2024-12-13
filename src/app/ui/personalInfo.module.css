@@ -28,10 +28,6 @@
   gap: 16px;
 }
 
-.form span {
-  color: var(--primary);
-}
-
 .button {
   background-color: var(--primary);
   border: 0px;

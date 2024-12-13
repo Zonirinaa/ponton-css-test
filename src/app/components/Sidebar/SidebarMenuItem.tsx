@@ -1,31 +1,25 @@
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 import React from "react";
 import styles from "@/app/ui/sidebar.module.css";
 
 const SidebarMenuItem = ({
-  iconSrc,
+  icon,
   text,
-  actionIconSrc,
+  actionIcon,
   variant = "menu",
 }: {
-  iconSrc: string;
+  icon: StaticImageData;
   text: string;
-  actionIconSrc?: string;
+  actionIcon?: StaticImageData;
   variant?: "menu" | "submenu";
 }) => {
   return (
     <div className={variant == "menu" ? styles.menuItem : styles.submenuItem}>
-      <Image
-        src={iconSrc}
-        alt="icon"
-        height={0}
-        width={0}
-        style={{ marginRight: "4px", height: "auto", width: "auto" }}
-      />
+      <Image src={icon} alt="icon" style={{ marginRight: "4px" }} />
       <div className={styles.menuText}>{text}</div>
-      {actionIconSrc && (
+      {actionIcon && (
         <Image
-          src={actionIconSrc}
+          src={actionIcon}
           alt="actionIcon"
           height={0}
           width={0}

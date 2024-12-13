@@ -16,7 +16,3 @@
 .hidden_checkbox:checked + .custom_checkbox {
   background-color: var(--primary);
 }
-
-.text span {
-  color: var(--primary);
-}

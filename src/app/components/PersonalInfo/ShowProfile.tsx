@@ -8,8 +8,8 @@ const ShowProfile = () => {
         <input type="checkbox" className={styles.hidden_checkbox} />
         <span className={styles.custom_checkbox} />{" "}
         <p className={styles.text}>
-          Show my profile to serious employers on <span>hirethesbest.io</span>{" "}
-          for free
+          Show my profile to serious employers on <a>hirethesbest.io</a> for
+          free
         </p>
       </label>
     </div>
