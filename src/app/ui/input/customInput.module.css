@@ -48,12 +48,12 @@
 }
 
 .icon_check {
-  padding-right: 25px;
+  padding-right: 35px;
   background: url(/icons/personalInfo/check.png) no-repeat right 12px top 50% /
     16px;
 }
 
 .icon_x {
-  padding-right: 25px;
+  padding-right: 35px;
   background: url(/icons/personalInfo/x.png) no-repeat right 12px top 50% / 16px;
 }
