@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import Sidebar from "@/app/components/Sidebar";
+import Sidebar from "@/app/components/Sidebar/Sidebar";
 import { gilroy } from "../../public/fonts/config/config";
 
 export const metadata: Metadata = {
@@ -17,7 +17,10 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${gilroy.className}`}>
         <Sidebar />
-        <main>{children}</main>
+        <div className="container">
+          <main>{children}</main>
+          <footer className={""}>dsds</footer>
+        </div>
       </body>
     </html>
   );
