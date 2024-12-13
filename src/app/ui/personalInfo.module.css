@@ -1,0 +1,19 @@
+.premiumCard {
+  padding: 24px;
+  background-color: #008b5d;
+  color: var(--background);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.premiumCard h4 {
+  margin-bottom: 4px;
+}
+
+.premiumCardLogo {
+  padding: 12px;
+  background-color: var(--background);
+  border-radius: 1000px;
+}
