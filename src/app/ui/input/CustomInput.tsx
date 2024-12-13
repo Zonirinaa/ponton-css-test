@@ -1,4 +1,10 @@
-import React, { CSSProperties, HTMLInputTypeAttribute } from "react";
+"use client";
+import React, {
+  ChangeEvent,
+  CSSProperties,
+  HTMLInputTypeAttribute,
+  useState,
+} from "react";
 import styles from "./customInput.module.css";
 
 const CustomInput = ({
@@ -14,14 +20,35 @@ const CustomInput = ({
   defaultValue?: string;
   style?: CSSProperties;
 }) => {
+  const [isValid, setIsValid] = useState<boolean | null>(null);
+
+  const validateEmail = (value: string) => {
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    setIsValid(emailRegex.test(value));
+  };
+
+  const handleChange = (event: ChangeEvent<HTMLInputElement>) => {
+    const value = event.target.value;
+    if (type === "email") {
+      validateEmail(value);
+    }
+  };
+
   return (
-    <div className={styles.input_wrapper} style={style}>
+    <div className={`${styles.input_wrapper}`} style={style}>
       <input
         type={type}
         id={id}
-        className={`${styles.input}`}
+        className={`${styles.input} ${
+          isValid === true
+            ? styles.icon_check
+            : isValid === false
+            ? styles.icon_x
+            : ""
+        }`}
         defaultValue={defaultValue}
         required
+        onChange={handleChange}
       />
       <label htmlFor={id} className={styles.placeholder}>
         {label}
