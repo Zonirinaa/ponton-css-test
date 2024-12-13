@@ -3,6 +3,7 @@ import React, {
   ChangeEvent,
   CSSProperties,
   HTMLInputTypeAttribute,
+  useEffect,
   useState,
 } from "react";
 import styles from "./customInput.module.css";
@@ -33,6 +34,10 @@ const CustomInput = ({
       validateEmail(value);
     }
   };
+
+  useEffect(() => {
+    if (type == "email" && defaultValue) validateEmail(defaultValue);
+  }, []);
 
   return (
     <div className={`${styles.input_wrapper}`} style={style}>
