@@ -1,0 +1,22 @@
+.hidden_checkbox {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.custom_checkbox {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  border: 2px solid #c4c4c7;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.hidden_checkbox:checked + .custom_checkbox {
+  background-color: var(--primary);
+}
+
+.text span {
+  color: var(--primary);
+}

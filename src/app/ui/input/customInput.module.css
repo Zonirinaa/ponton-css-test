@@ -1,0 +1,59 @@
+.input_wrapper {
+  --padding: 12px;
+  --focus-color: black;
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-top: 8px;
+}
+
+.input {
+  height: 48px;
+  padding: var(--padding);
+  border: 1px solid var(--border-color);
+  outline: none;
+  border-radius: 4px;
+  width: 100%;
+  color: #595964;
+  font-size: 15px;
+  line-height: 22px;
+}
+
+.placeholder {
+  position: absolute;
+  background-color: var(--background);
+  color: var(--input-placeholder);
+  left: var(--padding);
+  padding: 0 4px;
+  transition: all 0.2s ease-in;
+  color: #4c4c55;
+  font-size: 15px;
+  line-height: 22px;
+}
+
+.input:focus {
+  border: 1px solid var(--focus-color);
+}
+
+.input:focus + .placeholder {
+  color: var(--focus-color);
+}
+
+.input:focus + .placeholder,
+.input:valid + .placeholder {
+  transform: translateY(calc(-1 * var(--padding) - 11px));
+  font-weight: 500;
+  font-size: 11px;
+  line-height: 14px;
+}
+
+.icon_check {
+  padding-right: 25px;
+  background: url(/icons/personalInfo/check.png) no-repeat right 12px top 50% /
+    16px;
+}
+
+.icon_x {
+  padding-right: 25px;
+  background: url(/icons/personalInfo/x.png) no-repeat right 12px top 50% / 16px;
+}

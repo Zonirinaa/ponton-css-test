@@ -1,3 +1,7 @@
+.personalInfoContainer > *:not(:first-child) {
+  margin-top: 32px;
+}
+
 .premiumCard {
   padding: 24px;
   background-color: #008b5d;
@@ -16,4 +20,38 @@
   padding: 12px;
   background-color: var(--background);
   border-radius: 1000px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.form span {
+  color: var(--primary);
+}
+
+.button {
+  background-color: var(--primary);
+  border: 0px;
+  border-radius: 4px;
+  padding: 9px;
+  color: var(--background);
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 22px;
+  cursor: pointer;
+  width: 170px;
+  transition: all 100ms ease-in-out;
+}
+
+.button:hover {
+  background-color: var(--primary-btn-hover);
+}
+
+.button:active {
+  width: 150px;
+  transition: all 100ms ease-in-out;
+  background-color: var(--primary-btn-active);
 }
