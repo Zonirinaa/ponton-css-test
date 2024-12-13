@@ -90,7 +90,7 @@ const Sidebar = () => {
         </div>
         <div>
           <SidebarMenuItem icon={board} text="My boards" actionIcon={add} />
-          <SidebarMenuItem icon={board} text="Board 1" variant="submenu" />
+          <SidebarMenuItem icon={documents} text="Board 1" variant="submenu" />
           <SidebarMenuItem icon={documents} text="Board 2" variant="submenu" />
           <SidebarMenuItem icon={documents} text="Board 3" variant="submenu" />
           <SidebarMenuItem
