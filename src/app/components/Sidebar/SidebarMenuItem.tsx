@@ -21,9 +21,7 @@ const SidebarMenuItem = ({
         <Image
           src={actionIcon}
           alt="actionIcon"
-          height={0}
-          width={0}
-          style={{ marginRight: "4px", height: "auto", width: "auto" }}
+          style={{ marginRight: "4px", cursor: "pointer" }}
         />
       )}
     </div>
