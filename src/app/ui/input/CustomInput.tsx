@@ -36,7 +36,7 @@ const CustomInput = ({
   };
 
   useEffect(() => {
-    if (type == "email" && defaultValue) validateEmail(defaultValue);
+    if (type === "email" && defaultValue) validateEmail(defaultValue);
   }, []);
 
   return (
