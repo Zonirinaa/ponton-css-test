@@ -16,3 +16,8 @@
 .hidden_checkbox:checked + .custom_checkbox {
   background-color: var(--primary);
 }
+
+.text {
+  font-size: 13px;
+  line-height: 20px;
+}
