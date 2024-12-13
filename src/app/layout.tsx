@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import Sidebar from "@/app/components/Sidebar/Sidebar";
 import { gilroy } from "../../public/fonts/config/config";
+import Footer from "./components/footer/Footer";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -19,7 +20,7 @@ export default function RootLayout({
         <Sidebar />
         <div className="container">
           <main>{children}</main>
-          <footer className={""}>dsds</footer>
+          <Footer />
         </div>
       </body>
     </html>

@@ -3,6 +3,7 @@ import styles from "@/app/ui/personalInfo.module.css";
 import PremiumAccountCard from "./PremiumAccountCard";
 import PersonalInfoForm from "./PersonalInfoForm";
 import ShowProfile from "./ShowProfile";
+import DeleteAccount from "./DeleteAccount";
 
 const PersonalInfo = () => {
   return (
@@ -10,6 +11,7 @@ const PersonalInfo = () => {
       <PremiumAccountCard />
       <PersonalInfoForm />
       <ShowProfile />
+      <DeleteAccount />
     </div>
   );
 };
