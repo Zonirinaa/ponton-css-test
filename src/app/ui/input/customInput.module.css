@@ -25,7 +25,7 @@
   color: var(--input-placeholder);
   left: var(--padding);
   padding: 0 4px;
-  transition: all 0.2s ease-in;
+  transition: all 200ms ease-in;
   color: #4c4c55;
   font-size: 15px;
   line-height: 22px;
